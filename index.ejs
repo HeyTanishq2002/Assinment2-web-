@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add more meta tags if necessary -->
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div> <!-- Changed class name to "fas fa-bars" -->
+        <a href="#" class="logo"><span>T</span>ourism</a>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#book">BOOK</a>
+            <a href="#packages">PACKAGES</a>
+            <a href="#services">SERVICES</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#review">REVIEW</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="user-btn"></i>
+            <i class="fas fa-sign-in-alt" id="signin-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <button type="submit" class="fas fa-search"></button> <!-- Changed label to a button -->
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times form-close"></i>
+        <form action="">
+            <h3>Login</h3> <!-- Capitalized "Login" -->
+            <input type="text" class="box" placeholder="Enter your name">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <input type="submit" value="Login now" class="btn">
+            <p>Forgot password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Register now</a></p> <!-- Added a question mark and space -->
+        </form>
+    </div>
+
+    <div class="signin-form-container">
+        <form action="">
+            <h3>Signup</h3> <!-- Capitalized "Signup" -->
+            <input type="text" class="box" placeholder="Enter your name">
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="password" class="box" placeholder="Confirm your password">
+            <input type="submit" value="Sign Up now" class="btn"> 
+        </form>
+    </div>
+<!-- home section starts -->
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure the place</h3>
+        <p>discover new places with us and adventure awaits</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls"> 
+        <span class="vid-btn active" data-src="vid1.mp4"></span>
+        <span class="vid-btn" data-src="vid2.mp4"></span>
+        <span class="vid-btn" data-src="vid3.mp4"></span>
+        <span class="vid-btn" data-src="vid4.mp4"></span>
+        <span class="vid-btn" data-src="vid5.mp4"></span>
+    </div>
+    
+    <div class="video-container">
+        <video src="vid1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+<!-- home section ends -->
+
+<!-- book section starts -->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <img src="book-img1.svg" alt="">
+    </div>
+
+    <form action="">
+        <div class="inputBox">
+            <h3>where to</h3>
+            <input type="text" placeholder="place name">
+        </div>
+        <div class="inputBox">
+            <h3>how many</h3>
+            <input type="number" placeholder="number of guests">
+        </div>
+        <div class="inputBox">
+            <h3>arrivals</h3>
+            <input type="date">
+        </div>
+        <div class="inputBox">
+            <h3>leaving</h3>
+            <input type="date">
+        </div>
+        <input type="submit" class="btn" value="book now">
+    </form>
+</section>
+<!-- book section ends -->
+
+<!-- Packages section starts -->
+
+<section class="packages" id="packages">
+    
+    <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="img 1.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-martker-alt"></i>Kerala</h3>
+                <p>Enjoy the Nature</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $100.00 <span> $1500.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img 2.jpg"  alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-martker-alt"></i>Tamil Nadu</h3>
+                <p>Enjoy the view</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $100.00 <span> $3500.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img 3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-martker-alt"></i>Andra Pradesh</h3>
+                <p>Enjoy the place</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $100.00 <span> $2500.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img 4.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-martker-alt"></i>Telangana</h3>
+                <p>Enjoy the place</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $100.00 <span> $1500.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img 5.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-martker-alt"></i>Delhi</h3>
+                <p>Enjoy the place</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $100.00 <span> $1500.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img 6.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-martker-alt"></i>Ayodhya</h3>
+                <p>Enjoy the place</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $100.00 <span> $1500.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Packages section ends -->
+
+<!-- Service section starts -->
+
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>confertable hotels</h3>
+            <p>The peaceful and nature connecting hotels and refeshing the mind and rest freely</p>
+        </div>
+        
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>The nutritious food and drinks to improve the health</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety guide</h3>
+            <p>The safety  is improtant and we provide a secure place  </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-globe"></i>
+            <h3>Around india</h3>
+            <p>The places we get thought this great</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-train"></i>
+            <h3>Travel with fun</h3>
+            <p>The travel help in connecting with people and behavior</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventure</h3>
+            <p>It will make us strong to get out of pain and relef all the stress</p>
+        </div>
+    </div>
+</section>
+<!-- Service section ends -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
